@@ -16,11 +16,11 @@
     "@testring/recorder-extension": "0.4.37",
     "@testring/types": "0.4.37",
     "@types/deepmerge": "2.1.0",
-    "@types/node": "10.5.6",
-    "@types/webdriverio": "4.10.3",
-    "chromedriver": "2.41.0",
-    "deepmerge": "2.1.1",
+    "@types/node": "10.11.4",
+    "@types/webdriverio": "4.10.4",
+    "chromedriver": "2.42.0",
+    "deepmerge": "2.2.1",
     "selenium-server": "3.14.0",
-    "webdriverio": "4.13.1"
+    "webdriverio": "4.13.2"
   }
 }

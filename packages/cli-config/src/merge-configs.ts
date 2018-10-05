@@ -40,5 +40,5 @@ function mergePlugins(target: Array<any>, source: Array<any>, options) {
 }
 
 export function mergeConfigs<T>(...configs: Array<Partial<T>>): T {
-    return deepmerge.all(configs, { arrayMerge: mergePlugins });
+    return deepmerge.all(configs as any, { arrayMerge: mergePlugins }) as any;
 }

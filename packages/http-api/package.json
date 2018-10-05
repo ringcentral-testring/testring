@@ -15,11 +15,11 @@
     "@testring/test-utils": "0.4.37",
     "@testring/transport": "0.4.37",
     "@testring/types": "0.4.37",
-    "@types/nanoid": "1.0.0",
-    "@types/node": "10.5.6",
+    "@types/nanoid": "1.2.0",
+    "@types/node": "10.11.4",
     "@types/request-promise": "4.1.42",
     "@types/tough-cookie": "2.3.3",
-    "nanoid": "1.1.0",
+    "nanoid": "1.2.6",
     "request-promise": "4.2.2",
     "tough-cookie": "2.4.3"
   }
