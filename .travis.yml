@@ -24,7 +24,7 @@ cache:
   - node_modules
 
 script:
-  #- xvfb-run npm run build:ci
+  - xvfb-run npm run build:ci
   - sonar-scanner
 
 stages:
