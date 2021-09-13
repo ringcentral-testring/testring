@@ -27,6 +27,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
           registry-url: 'https://npm.pkg.github.com'
+        - run: npm ci
+        - run: npm run build
+        - run: npm run test:ci
       - name: Git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -34,10 +37,6 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install & Testing
-          - run: npm ci
-          - run: npm run build
-          - run: npm run test:ci
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
