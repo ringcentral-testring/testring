@@ -2,10 +2,7 @@
   "name": "@testring/devtool-backend",
   "version": "0.5.39",
   "main": "./dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbao/testring.git"
-  },
+  "repository":"https://github.com/danbao/testring",
   "author": "RingCentral",
   "license": "MIT",
   "scripts": {

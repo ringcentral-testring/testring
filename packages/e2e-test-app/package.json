@@ -2,10 +2,7 @@
   "name": "@testring/e2e-test-app",
   "private": true,
   "version": "0.5.39",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbao/testring.git"
-  },
+  "repository":"https://github.com/danbao/testring",
   "author": "RingCentral",
   "license": "MIT",
   "scripts": {

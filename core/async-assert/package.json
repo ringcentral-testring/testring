@@ -10,10 +10,7 @@
   "license": "ISC",
   "main": "./dist/index.js",
   "types": "./src/index.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbao/testring.git"
-  },
+  "repository":"https://github.com/danbao/testring",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },

@@ -8,10 +8,7 @@
   ],
   "main": "./dist/index.js",
   "types": "./src/index.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbao/testring.git"
-  },
+  "repository":"https://github.com/danbao/testring",
   "author": "RingCentral",
   "license": "MIT",
   "dependencies": {

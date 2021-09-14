@@ -3,10 +3,7 @@
   "private": true,
   "author": "RingCentral",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbao/testring.git"
-  },
+  "repository":"https://github.com/danbao/testring",
   "scripts": {
     "cleanup": "npm run cleanup:packages && npm run cleanup:root",
     "cleanup:root": "node ./utils/cleanup.js",
