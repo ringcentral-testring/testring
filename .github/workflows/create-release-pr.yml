@@ -19,7 +19,12 @@ jobs:
 
     if: |
       github.event_name == 'issue_comment' &&
-      (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER') &&
+      (
+        (github.event.comment.author_association == 'OWNER') ||
+        (github.event.comment.author_association == 'COLLABORATOR') ||
+        (github.event.comment.author_association == 'CONTRIBUTOR') ||
+        (github.event.comment.author_association == 'MEMBER')
+      ) &&
       startsWith(github.event.comment.body, '/create-release')
     steps:
       - name: Checkout

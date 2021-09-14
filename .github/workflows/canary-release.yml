@@ -18,7 +18,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     if: |
       github.event_name == 'issue_comment' &&
-      (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'CONTRIBUTOR') &&
+      (
+        (github.event.comment.author_association == 'OWNER') ||
+        (github.event.comment.author_association == 'COLLABORATOR') ||
+        (github.event.comment.author_association == 'CONTRIBUTOR') ||
+        (github.event.comment.author_association == 'MEMBER')
+      ) &&
       startsWith(github.event.comment.body, '/canary-release')
     steps:
       - name: get pr information
