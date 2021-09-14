@@ -16,17 +16,16 @@ jobs:
       matrix:
         node: ['14']
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        #      github.event_name == 'issue_comment' &&
-        #      (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'CONTRIBUTOR') &&
-    if: |
-      startsWith(github.event.comment.body, '/canary-release')
+   #if: |
+   #  github.event_name == 'issue_comment' &&
+   #  (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'CONTRIBUTOR') &&
+   #  startsWith(github.event.comment.body, '/canary-release')
     steps:
       # Check author_association
       - name: Check author_association
         run: |
           echo event.comment.user.login is ${{ github.event.comment.user.login }}
           echo event.comment.author_association is ${{ github.event.comment.author_association }}
-          echo github.event_name is ${{ github.event_name }}
           echo Hello, this workflow is allowed to OWNER, MEMBER, COLLABORATOR.
       - name: get pr information
         uses: actions/github-script@v4
