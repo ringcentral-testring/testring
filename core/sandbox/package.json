@@ -13,9 +13,9 @@
   "author": "RingCentral",
   "license": "MIT",
   "dependencies": {
-    "@testring/api": "^0.5.39",
-    "@testring/test-utils": "^0.5.39",
-    "@testring/types": "^0.5.39",
-    "@testring/utils": "^0.5.39"
+    "@ringcentral-testring/api": "^0.5.39",
+    "@ringcentral-testring/test-utils": "^0.5.39",
+    "@ringcentral-testring/types": "^0.5.39",
+    "@ringcentral-testring/utils": "^0.5.39"
   }
 }

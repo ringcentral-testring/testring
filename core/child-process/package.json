@@ -11,8 +11,8 @@
     "registry": "https://npm.pkg.github.com/ringcentral-testring"
   },
   "dependencies": {
-    "@testring/types": "^0.5.39",
-    "@testring/utils": "^0.5.39"
+    "@ringcentral-testring/types": "^0.5.39",
+    "@ringcentral-testring/utils": "^0.5.39"
   },
   "author": "RingCentral",
   "license": "MIT"

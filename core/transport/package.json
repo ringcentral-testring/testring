@@ -13,9 +13,9 @@
   "author": "RingCentral",
   "license": "MIT",
   "dependencies": {
-    "@testring/child-process": "^0.5.39",
-    "@testring/types": "^0.5.39",
-    "@testring/utils": "^0.5.39",
+    "@ringcentral-testring/child-process": "^0.5.39",
+    "@ringcentral-testring/types": "^0.5.39",
+    "@ringcentral-testring/utils": "^0.5.39",
     "@types/node": "14.6.0"
   }
 }

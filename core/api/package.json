@@ -13,12 +13,12 @@
   "author": "RingCentral",
   "license": "MIT",
   "dependencies": {
-    "@testring/async-breakpoints": "^0.5.39",
-    "@testring/http-api": "^0.5.39",
-    "@testring/logger": "^0.5.39",
-    "@testring/transport": "^0.5.39",
-    "@testring/types": "^0.5.39",
-    "@testring/utils": "^0.5.39",
-    "@testring/web-application": "^0.5.39"
+    "@ringcentral-testring/async-breakpoints": "^0.5.39",
+    "@ringcentral-testring/http-api": "^0.5.39",
+    "@ringcentral-testring/logger": "^0.5.39",
+    "@ringcentral-testring/transport": "^0.5.39",
+    "@ringcentral-testring/types": "^0.5.39",
+    "@ringcentral-testring/utils": "^0.5.39",
+    "@ringcentral-testring/web-application": "^0.5.39"
   }
 }
