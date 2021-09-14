@@ -7,7 +7,10 @@
   "bin": {
     "testring": "./bin/testring.js"
   },
-  "repository":"https://github.com/danbao/testring",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danbao/testring.git"
+  },
   "author": "RingCentral",
   "license": "MIT",
   "dependencies": {

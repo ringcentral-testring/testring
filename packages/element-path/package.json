@@ -3,7 +3,10 @@
   "version": "0.5.39",
   "main": "./dist/index.js",
   "typings": "./src/index.ts",
-  "repository":"https://github.com/danbao/testring",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danbao/testring.git"
+  },
   "author": "RingCentral",
   "license": "MIT"
 }
