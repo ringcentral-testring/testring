@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ringcentral/testring.git"
+    "url": "https://github.com/danbao/testring.git"
   },
   "scripts": {
     "cleanup": "npm run cleanup:packages && npm run cleanup:root",
