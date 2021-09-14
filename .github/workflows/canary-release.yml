@@ -26,6 +26,8 @@ jobs:
         run: |
           echo event.comment.user.login is ${{ github.event.comment.user.login }}
           echo event.comment.author_association is ${{ github.event.comment.author_association }}
+          echo github.event_name is ${{ github.event_name }}
+          echo github.event.comment.body is ${{ github.event.comment.body }}
           echo Hello, this workflow is allowed to OWNER, MEMBER, COLLABORATOR.
       - name: get pr information
         uses: actions/github-script@v4
