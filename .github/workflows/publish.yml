@@ -43,7 +43,6 @@ jobs:
       #  uses: coverallsapp/github-action@master
       #  with:
       #    github-token: ${{ secrets.GITHUB_TOKEN }}
-      # Define ${CURRENT_VERSION}
       - name: Git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -51,6 +50,7 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Define ${CURRENT_VERSION}
       - name: Set Current Version
         run: |
           CURRENT_VERSION=$(node -p 'require("./lerna.json").version')
