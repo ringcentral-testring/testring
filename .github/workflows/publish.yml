@@ -42,8 +42,8 @@ jobs:
             -Dsonar.verbose=true
             -Dsonar.exclusions=**/node_modules/**
             -Dsonar.test.inclusions=packages/**/*.spec.ts
-            -Dsonar.typescript.lcov.reportPaths=coverage/lcov.info
-            -Dsonar.typescript.tsconfigPath=tsconfig.json
+            -Dsonar.javascript.lcov.reportPaths=./coverage-reports/lcov.info
+            -Dsonar.typescript.tsconfigPath=**/tsconfig.json
       # Send coverage report to Coveralls
       #- name: Coveralls
       #  uses: coverallsapp/github-action@master
