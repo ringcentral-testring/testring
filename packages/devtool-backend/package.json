@@ -1,10 +1,13 @@
 {
-  "name": "@testring/devtool-backend",
+  "name": "@ringcentral-testring/devtool-backend",
   "version": "0.5.39",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danbao/testring.git"
+    "url": "https://github.com/ringcentral-testring/testring.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ringcentral-testring"
   },
   "author": "RingCentral",
   "license": "MIT",

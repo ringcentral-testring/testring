@@ -1,16 +1,19 @@
 {
-  "name": "@testring/async-breakpoints",
+  "name": "@ringcentral-testring/async-breakpoints",
   "version": "0.5.39",
   "main": "./dist/index.js",
   "types": "./src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danbao/testring.git"
+    "url": "https://github.com/ringcentral-testring/testring.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ringcentral-testring"
   },
   "author": "RingCentral",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danbao/testring/issues"
+    "url": "https://github.com/ringcentral-testring/testring/issues"
   },
   "dependencies": {
     "@types/node": "14.6.0"

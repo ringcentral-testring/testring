@@ -1,5 +1,5 @@
 {
-  "name": "@testring/fs-store",
+  "name": "@ringcentral-testring/fs-store",
   "version": "0.5.39",
   "description": "fs storage & operations service",
   "keywords": [
@@ -10,7 +10,10 @@
   "types": "./src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danbao/testring.git"
+    "url": "https://github.com/ringcentral-testring/testring.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ringcentral-testring"
   },
   "author": "RingCentral",
   "license": "MIT",
@@ -27,6 +30,6 @@
     "test": "mocha"
   },
   "bugs": {
-    "url": "https://github.com/danbao/testring/issues"
+    "url": "https://github.com/ringcentral-testring/testring/issues"
   }
 }
