@@ -44,10 +44,14 @@ jobs:
         with:
           ref: ${{ fromJSON(steps.pr.outputs.result).head.ref }}
           repository: ${{ fromJSON(steps.pr.outputs.result).head.repo.full_name }}
+      - name: Git Identity
+        run: |
+          git config --global user.name '${GITHUB_ACTOR}'
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
       # https://docs.github.com/en/actions/guides/publishing-nodejs-packages
       # Note: If you need to publish to registries that have different scope prefixes, you'll need to modify the package.json file on the runner to change the scope prefix. For example, if you publish a package to the @mona scope for npm and @octocat scope for GitHub Packages, you can replace the @mona scope with @octocat in the package.json file on the runner after publishing to npm and before publishing to GitHub Packages.
       - name: Prepare Publish Packages to Github
-        run: grep "@testring" -rl . | xargs sed -i "s/\@testring/\@danbao/g" && sed -i "s/\@OWNER/\@danbao/g" .npmrc
+        run: grep "@testring" -rl . | xargs sed -i "s/\@testring/\@${GITHUB_ACTOR}/g" && sed -i "s/\@OWNER/\@${GITHUB_ACTOR}/g" .npmrc
       - name: Setup Node.js ${{ matrix.node }}
         uses: actions/setup-node@v2
         with:
