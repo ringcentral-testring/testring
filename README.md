@@ -6,6 +6,7 @@
 [![Node.js CI](https://github.com/ringcentral/testring/actions/workflows/node.js.yml/badge.svg)](https://github.com/ringcentral/testring/actions/workflows/node.js.yml)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ringcentral_testring&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ringcentral_testring)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ringcentral_testring&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ringcentral_testring)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdanbao%2Ftestring.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdanbao%2Ftestring?ref=badge_shield)
 
 A simple way to create, run and support automatic UI tests, based on Node.js.
 
@@ -41,3 +42,7 @@ run
 $ npm run test:e2e
 ```
 the execution must finish without an error.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdanbao%2Ftestring.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdanbao%2Ftestring?ref=badge_large)
